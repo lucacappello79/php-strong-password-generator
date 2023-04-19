@@ -35,6 +35,24 @@ function generatePw($pwLength) {
         <input type="submit" value="Create PW"><br><br>
     </form>
 
+    <?php 
+    if (isset($_GET['pwLength'])) {
+
+        $pwLength = intval($_GET['pwLength']);
+
+        if ($pwLength > 8) {
+
+            $password = generatePw($pwLength);
+
+            echo '<p>Generated Password:  <strong>' . $password . '</strong></p>';
+
+        } else {
+
+            echo '<p>Enter a number higher than 7</p>';
+        }
+    }
+    ?>
+
 </body>
 
 
