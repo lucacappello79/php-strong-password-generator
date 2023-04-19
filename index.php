@@ -29,7 +29,7 @@ include './partials/functions.php';
 
         $pwLength = intval($_GET['pwLength']);
 
-        if ($pwLength > 8) {
+        if ($pwLength > 7) {
 
             $password = generatePw($pwLength);
 
