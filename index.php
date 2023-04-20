@@ -1,7 +1,7 @@
 <?php 
 
-include './partials/functions.php';
-
+// include './partials/functions.php';
+require_once __DIR__ . './partials/functions.php';
 ?>
 
 <!DOCTYPE html>
